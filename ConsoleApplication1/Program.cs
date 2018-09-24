@@ -10,10 +10,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int [] szam = new int [10];
+            Console.WriteLine("Írd be hány számot kérjen be a program: ");
+            int darab = int.Parse(Console.ReadLine());
+            int [] szam = new int [darab];
             string bemenet;
-            Console.WriteLine("Írj be 10 számot: ");
-            for (int i = 0; i < 9; i++)
+            Console.WriteLine("Írj be {0} darab számot: ", darab);
+            for (int i = 0; i < darab; i++)
             {
                 bemenet = Console.ReadLine();
                 szam [i ]= int.Parse(bemenet);
